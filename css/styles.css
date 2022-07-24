@@ -111,22 +111,16 @@ button {
     cursor: pointer;
 
 }
+.contacts-head{
+    display: flex;
+    align-items: center;
+
+}
+
 
 .menu-link:hover,
 .menu-link:focus {
         color:var(--third-text-color);
-}
-
-.contacts-head{
-    display: flex;
-    align-items: center;
-}
-
-.contacts-icons{
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill:currentColor;
 }
 
 .mail-link{
@@ -158,6 +152,25 @@ button {
         color:var(--third-text-color);
     }
 
+    .mail-link{
+        display: flex;
+        justify-content: center;
+    }
+    .mail-icon-head{
+        margin-right: 10px;
+        align-self: center;
+        fill:currentColor;
+    }
+.contact-phone-number{
+    display: flex;
+    justify-content: center;
+}
+.phone-icon-head{
+    margin-right: 10px;
+    margin-bottom: 0px;
+    align-self: center;
+    fill:currentColor;
+}
 
 /* ---------------------------------------HERO------------------------------- */
 .hero{
@@ -230,17 +243,16 @@ button {
 }
 
 .characteristic-item-icon-back{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
 }
-.characteristic-item-icon{
-    width: 70px;
-    height: 70px;
-}
+
 .characteristic-item{
     width: 270px;
 }
@@ -286,29 +298,39 @@ button {
 
 
 /* ---------------------------Team------------------------------------------------ */
-.social-list{
+.social-list {
     display: flex;
-    justify-content: space-between;
-    width: 206px;
-    margin: 0 auto;
+    justify-content: center;
+    gap: 10px;
 }
-.socail-list-icon{
-    fill:currentColor;
-}
-
-.social-list__item-link {
+.social-list-link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #ffffff;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--third-text-color);
+}
+
+.socail-list-icon {
+    fill:var(--secondary-tex-color);
+}
+
+.social-list-link:hover .socail-list-icon,
+.social-list-link:focus .socail-list-icon {
+    fill: #ffffff;
 }
 .team{
     background-color: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
+    margin-bottom: 94px;
     }
 .team-flex{
     display: flex;
@@ -349,12 +371,58 @@ button {
     letter-spacing: 0.03em;
     color: var(--secondary-tex-color);
     text-align: center;
+    margin-bottom: 16px;
     
 }
 
 .team-subtitle{
     padding-top: 30px;
     padding-bottom: 30px;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<     Clients       >>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.client-list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.stable-clients{
+    padding-bottom: 97px;
+}
+.clients-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom:50px ;
+}
+.client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.client-link{
+    display: flex;
+    align-items: center;
+}
+.client-logo{
+    fill:#757575;
+    
+}
+.client:hover .client-logo,
+.client:focus .client-logo{
+    fill:#2196F3;
+}
+.client:hover,
+.client:focus{
+    fill:#2196F3;
+    border: 1px solid #2196F3;
+
 }
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<      PORTFOLIO     >>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .main-section{
