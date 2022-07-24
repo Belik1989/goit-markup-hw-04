@@ -52,16 +52,16 @@
         <section class="main-section">
             <div class="container">
             <ul class="list filters">
-                <li ><button class="filter-btn" type="button">Все</button></li>
-                <li ><button class="filter-btn" type="button">Приложения</button></li>
-                <li ><button class="filter-btn" type="button">Дизайн</button></li>
-                <li ><button class="filter-btn" type="button">Маркетинг</button></li>
-                <li ><button class="filter-btn" type="button">Веб-сайты</button></li>
+                <li class="filter"><button class="filter-btn" type="button">Все</button></li>
+                <li class="filter"><button class="filter-btn" type="button">Приложения</button></li>
+                <li class="filter"><button class="filter-btn" type="button">Дизайн</button></li>
+                <li class="filter"><button class="filter-btn" type="button">Маркетинг</button></li>
+                <li class="filter"><button class="filter-btn" type="button">Веб-сайты</button></li>
             </ul>
         
     <!-- Projects -->
                 <ul class="list project-flex">
-            <li>
+            <li class="project-card">
                 <a class="poject-link link " href="">
                 <img src="./images/projects/proect1.jpg" 
                     alt="techno-kryak" 
@@ -73,7 +73,7 @@
                     </div>
                 </a>
             </li>
-            <li>
+            <li class="project-card">
                 <a class="poject-link link" href="">
                 <img src="./images/projects/proect2.jpg" 
                     alt="poster-new-orlean-vs-golden-state" 
@@ -85,7 +85,7 @@
                     </div>
                 </a>
             </li>
-            <li>
+            <li class="project-card">
                 <a class="poject-link link" href="">
                 <img src="./images/projects/proect3.jpg" 
                 alt="restaurant-sea-food" 
@@ -98,7 +98,7 @@
                 </a>
                 
             </li>
-            <li>
+            <li class="project-card">
                 <a class="poject-link link" href="">
                 <img src="./images/projects/proect4.jpg" 
                 alt="project-prime" 
@@ -110,7 +110,7 @@
                 </div>
                 </a>
             </li>
-            <li>
+            <li class="project-card">
                 <a class="poject-link link" href="">
                 <img src="./images/projects/proect5.jpg" 
                 alt="project-boxes" 
@@ -122,7 +122,7 @@
                 </div>
                 </a>
             </li>
-            <li>
+            <li class="project-card">
                 <a class="poject-link link" href="">
                 <img src="./images/projects/proect6.jpg" 
                 alt="inspiration-has-no-borders" 
@@ -134,7 +134,7 @@
                 </div>
                 </a>
             </li>
-            <li>
+            <li class="project-card">
                 <a class="poject-link link" href="">
                 <img src="./images/projects/proect7.jpg" 
                 alt="publish-limited-edition" 
@@ -146,7 +146,7 @@
                 </div>
                 </a>
             </li>
-            <li>
+            <li class="project-card">
                 <a class="poject-link link" href="">
                 <img src="./images/projects/proect8.jpg" 
                 alt="project-lab" 
@@ -158,7 +158,7 @@
             </div>
                 </a>
             </li>
-            <li>
+            <li class="project-card">
                 <a class="poject-link link" href="">
                 <img src="./images/projects/proect9.jpg" 
                 alt="growing-business" 
@@ -176,7 +176,8 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <section class="container social-contacts-footer">
+        <div class="contacts-box">
             <a class="logo-foot link logo-block" href="index.html">Web<span class="logo-foot-part2">Studio</span></a>
     <address>
         <ul class="contacts list contacts-item-blox ">
@@ -193,6 +194,40 @@
     </li>
             </ul>
         </div>
+        <div class="social-box">
+            <h3 class="social-list-footer-title">Присоединяйтесь</h3>
+                    <ul class="social-list-footer list">
+                    <li class="social-list-item-footer">
+                    <a href=""class="social-list-link-footer">
+                        <svg class="socail-list-icon-footer" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                    </li>
+                    <li class="social-list-item-footer">
+                    <a href=""class="social-list-link-footer">
+                        <svg class="socail-list-icon-footer" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                    </li>
+                    <li class="social-list-item-footer">
+                    <a href="" class="social-list-link-footer">
+                        <svg class="socail-list-icon-footer" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    </li>
+                    <li class="social-list-item-footer">
+                    <a href="" class="social-list-link-footer">
+                        <svg class="socail-list-icon-footer" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                    </li>
+                </ul>
+        </div>
+    </section>
         </address>
     
 </footer>
