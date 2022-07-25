@@ -217,10 +217,10 @@ button {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color:var(--primary-text-color);
-    background: #F5F4FA;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color:#FFFFFF;
+    background: var(--third-text-color);
     border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
     cursor: pointer;
     padding: 10px 32px 10px 32px;
@@ -231,8 +231,9 @@ button {
 
 .service-btn:hover,
 .service-btn:focus{
-    background-color:var(--third-text-color);
-    color: #FFFFFF;
+    background-color: #188CE8;
+    /* background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));     */
+    
 }
 /* -----------------------Characteristic-------------------------------------------*/
 .characteristic{
@@ -322,7 +323,7 @@ button {
 }
 
 .socail-list-icon {
-    fill:var(--secondary-tex-color);
+    fill:#AFB1B8;
 }
 
 .social-list-link:hover .socail-list-icon,
@@ -400,7 +401,7 @@ button {
     color: var(--primary-text-color);
     margin-bottom:50px ;
 }
-.client{
+.client-link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -409,24 +410,36 @@ button {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-.client-link{
+.client-item{
     display: flex;
     align-items: center;
 }
 .client-logo{
-    fill:#757575;
+    fill:#AFB1B8;
+    
+        
+}
+.client-item:hover .client-logo,
+.client-item:focus .client-logo{
+    fill:#2196F3;
     
 }
-.client:hover .client-logo,
-.client:focus .client-logo{
-    fill:#2196F3;
-}
-.client:hover,
-.client:focus{
+.client-link:hover,
+.client-link:focus {
     fill:#2196F3;
     border: 1px solid #2196F3;
-
+    border-radius: 4px;
 }
+.client-link:hover .client-logo,
+.client-link:focus .client-logo {
+    fill:#2196F3;
+}
+/* .client:hover .client-link,
+.client:focus .client-link{
+    fill:#2196F3;
+   } */
+
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<      PORTFOLIO     >>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .main-section{
     padding-top: 94px;
@@ -549,7 +562,7 @@ button {
     padding-bottom: 20px;
 }
 
-.contacts-item{
+.contacts-item-box{
     display: block;
 
 }
@@ -560,7 +573,7 @@ button {
     letter-spacing: 0.03em;
     color: #FFFFFF;
     font-style: normal;
-    /* padding-bottom: 9px; */
+    margin-bottom: 9px;
 
 }
 .location:hover,
@@ -614,7 +627,7 @@ color: #FFFFFF;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--secondary-tex-color);
+    background-color: rgba(255, 255, 255, 0.1);;
 }
 
 .social-list-link-footer:hover,
